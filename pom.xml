@@ -25,10 +25,20 @@
 	</properties>
 
 	<distributionManagement>
+		<!--<repository>-->
+		<!--	<id>local-mvn-repo</id>-->
+		<!--	<url>file:D:\java-2021-03\Maven\repository</url>-->
+		<!--</repository>-->
 		<repository>
-			<id>local-mvn-repo</id>
-			<url>file:D:\java-2021-03\Maven\repository</url>
+			<id>releases</id>
+			<name>nexus3 maven-releases</name>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
 		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>nexus3 maven-snapshots</name>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<dependencies>
