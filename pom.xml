@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.2</version>
+		<version>2.6.8</version>
 		<relativePath />
 	</parent>
 
@@ -30,13 +30,13 @@
 		<!--	<url>file:D:\java-2021-03\Maven\repository</url>-->
 		<!--</repository>-->
 		<repository>
-			<id>releases</id>
-			<name>nexus3 maven-releases</name>
+			<id>nexus-releases</id>
+			<name>maven-releases</name>
 			<url>http://192.168.223.128:8081/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
-			<id>snapshots</id>
-			<name>nexus3 maven-snapshots</name>
+			<id>nexus-snapshots</id>
+			<name>maven-snapshots</name>
 			<url>http://192.168.223.128:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
